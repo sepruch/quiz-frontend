@@ -1,0 +1,14 @@
+.quiz-page {
+  background-color: #fdf8ef;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+

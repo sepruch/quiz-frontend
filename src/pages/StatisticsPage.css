@@ -1,0 +1,97 @@
+:root {
+    --blue: #034488;
+    --light: #EDECE8;
+    --mint: #4F999E;
+    --white: #FFFCF6;
+    --black: #000000;
+}
+
+/* Полная высота устройства */
+.stats-page {
+    background: var(--light);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- ХЭДЕР КАК ВО ВСЁМ ПРИЛОЖЕНИИ ----- */
+
+.my-header-top-line {
+    width: 88%;
+    height: 3px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 26px auto 16px;
+}
+
+.my-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.my-back {
+    width: 28px;
+    height: 28px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.my-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my-header-bottom-line {
+    width: 88%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 16px auto 20px;
+}
+
+/* ----- КОНТЕНТ ----- */
+
+.stats-wrapper {
+    width: 92%;
+    margin: 0 auto;
+    background: var(--blue);
+    border-radius: 12px;
+    padding: 20px 12px 40px;
+}
+
+.stats-inner {
+    width: 90%;
+    margin-left: 9px;
+    background: var(--mint);
+    border-radius: 10px;
+    padding: 12px 8px 200px;
+}
+
+.stats-title {
+    font-size: 15px;
+    text-align: center;
+}
+
+.stats-divider {
+    width: 100%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 10px 0 15px;
+}
+
+.stats-text {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+}

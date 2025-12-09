@@ -1,0 +1,133 @@
+:root {
+    --blue: #034488;
+    --light: #EDECE8;
+    --mint: #4F999E;
+    --white: #FFFCF6;
+}
+
+/* Страница — всегда на всю высоту устройства */
+.myquizzes {
+    background: var(--light);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ---------- HEADER (1:1 как в СОЗДАТЬ КВИЗ) ---------- */
+
+/* верхняя линия */
+.my-header-top-line {
+    width: 88%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 28px auto 16px;
+}
+
+/* контейнер со стрелкой и текстом */
+.my-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 20px;
+}
+
+.my-back {
+    width: 28px;
+    height: 28px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.my-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 1px;
+
+    /* Сдвиг текста к центру — как в create-page */
+
+}
+
+/* нижняя линия */
+.my-header-bottom-line {
+    width: 88%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 16px auto 20px;
+}
+
+/* ---------- CONTENT ---------- */
+
+.myquizzes-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Маленький круг — левее и выше */
+.recent-circle {
+    width: 150px;
+    height: 150px;
+    background: var(--blue);
+    border-radius: 50%;
+    position: relative;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: -120px; /* смещение влево */
+}
+
+/* Большой круг — ниже и больше */
+.list-circle {
+    width: 360px;
+    height: 360px;
+    background: var(--blue);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden; /* 🟦 ОБРЕЗАЕМ ВСЁ, ЧТО ВЫХОДИТ ЗА КРУГ */
+    z-index: 1;       /* чтобы иконка не перекрывала круг */
+}
+
+
+.recent-small-label,
+.recent-title {
+    font-size: 12px;
+}
+
+.recent-play {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 34px;
+    height: 34px;
+}
+
+.list-label {
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+.list-icon {
+    position: absolute;
+    width: 50vw;   /* 🟩 увеличиваем */
+    height: 260px;
+    bottom: -80px;    /* ставим в нижнюю часть круга */
+    right: -20px;    /* небольшой сдвиг */
+    z-index: 2;     /* 🟥 поверх содержимого круга, но внутри его обрезки */
+}
+

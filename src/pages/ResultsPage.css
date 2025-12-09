@@ -1,0 +1,86 @@
+:root {
+    --blue: #034488;
+    --light: #EDECE8;
+    --white: #FFFCF6;
+    --black: #000;
+}
+
+.results-page {
+    background: var(--light);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* Крестик */
+.results-exit {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* Логотип Q */
+.results-logo {
+    font-size: 90px;
+    font-weight: 800;
+    color: var(--blue);
+    margin-top: 40px;
+}
+
+/* Блок результата */
+.results-box {
+    background: var(--blue);
+    width: 80%;
+    max-width: 330px;
+    padding: 24px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.results-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.results-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 6px 0;
+}
+
+.results-value {
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* Кнопка перерешать */
+.results-retry {
+    margin-top: 32px;
+    background: var(--blue);
+    color: var(--white);
+    width: 80%;
+    max-width: 330px;
+    padding: 16px 0;
+    font-size: 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.results-retry:active {
+    transform: scale(0.97);
+}

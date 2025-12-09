@@ -1,0 +1,217 @@
+:root {
+    --blue: #034488;
+    --light: #EDECE8;
+    --mint: #4F999E;
+    --white: #FFFCF6;
+    --black: #000000;
+}
+
+.quiz-create {
+    background: var(--light);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ========== HEADER КАК В SHAREPAGE ========== */
+
+/* Верхняя линия */
+.create-header-top-line {
+    width: 88%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 28px auto 16px;
+}
+
+/* Контейнер заголовка */
+.create-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 20px;
+}
+
+/* Стрелка назад */
+.create-back {
+    width: 28px;
+    height: 28px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* Текст заголовка */
+.create-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 1px;
+
+    /* Выравниваем по макету */
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+/* Нижняя линия */
+.create-header-bottom-line {
+    width: 88%;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.45;
+    margin: 16px auto 20px;
+}
+
+
+.back-btn {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* СЛАЙДЕР ЭКРАНОВ */
+.slides {
+    display: flex;
+    transition: 0.35s ease;
+    padding-right: 60px;
+}
+
+.slide {
+    width: 100vw;
+    display: flex;
+}
+
+.slide-left {
+    justify-content: flex-start;
+}
+
+.slide-center {
+    justify-content: center;
+}
+
+/* СИНИЙ БЛОК */
+.blue-block {
+    width: 70vw;
+    margin-top: 40px;
+    background: var(--blue);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    height: calc(100vh - 150px);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.question-block {
+    justify-content: center;
+}
+
+/* INPUTS */
+.card {
+    background: var(--mint);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    background: var(--mint);
+    font-size: 18px;
+    color: var(--white);
+}
+
+/* TEXTAREAS */
+.area {
+    background: var(--mint);
+    border-radius: 10px;
+    padding: 0px;
+    border: none;
+    height: 180px;
+    resize: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.input::placeholder,
+.area::placeholder {
+    color: var(--white);
+    opacity: 0.8; /* Хорошая читаемость */
+}
+
+
+/* Время */
+.time-title {
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.time-select button {
+    background: var(--blue);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.labels {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px; /* тонкая подгонка под макет */
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 16px;
+    margin-left: -28px;
+}
+
+
+/* СТРЕЛКИ */
+.circle-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--blue);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.circle-btn.right {
+    right: -12px;
+}
+
+.circle-btn.left {
+    left: -12px;
+}
+
+/* СЧЁТЧИК */
+.counter {
+    background: #0c3979;
+    width: 80px;
+    padding: 6px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ГАЛОЧКА БЕЗ КРУГА */
+.final-save {
+    margin-top: 2px;
+    padding: 12px 20px;
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-end;
+    cursor: pointer;
+}
+

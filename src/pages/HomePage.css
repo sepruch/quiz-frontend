@@ -1,0 +1,108 @@
+.home-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #034488;
+    padding-top: 120px; /* для места под логотип */
+}
+
+
+
+/* === СЛОЙ 1 — Цветной фон === */
+.bg-base {
+    position: absolute;
+    inset: 0;
+    background: #034488;
+    z-index: 0;
+}
+
+/* Контейнер, который iOS НЕ режет */
+.bg-wrapper {
+    position: absolute;
+    top: -20vh;      /* выносим фон вверх и вниз */
+    left: -20vw;
+    width: 140vw;
+    height: 140vh;   /* контейнер больше экрана */
+
+    pointer-events: none;
+    overflow: visible;  /* важно */
+    z-index: 0;
+}
+
+/* Q сверху */
+.bg-q {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 360px;        /* чуть больше логотипа */
+    opacity: 0.4;
+    filter: blur(8px);  /* усиливаем размытие */
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* LEARN снизу */
+.bg-learn {
+    position: absolute;
+    bottom: 230px;                /* уводим чуть ниже экрана */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90vw;                 /* делаем шире экрана, чтобы края ушли за пределы */
+    opacity: 0.3;
+    filter: blur(8px);           /* мягкое размытие */
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.start-btn {
+    position: relative;
+    z-index: 10;
+
+    margin: 40px auto 0;
+    padding: 20px 40px;
+    color: #000;
+    background: #EDECE8;
+    border: none;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: auto;
+
+}
+
+
+.menu-grid {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 10;
+
+    /* width: 100%;  можно убрать, не обязательно */
+    display: grid;
+
+    /* ВАЖНО: колонки размера по содержимому, а не 1fr */
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;   /* центрируем весь блок */
+
+    column-gap: 12px;           /* расстояние между колонками */
+    row-gap: 12px;             /* вертикальный отступ */
+
+    padding: 0;                /* если не нужен отступ от краёв */
+}
+
+
+
+

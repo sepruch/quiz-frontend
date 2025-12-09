@@ -1,0 +1,115 @@
+.share-page {
+    width: 100%;
+    height: 100vh;
+    background: #034488;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- HEADER ---------- */
+
+.share-header {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 20px;
+}
+
+.share-back {
+    margin-left: auto;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.share-title {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+.share-line {
+    width: 88%;
+    height: 2px;
+    background: white;
+    opacity: 0.45;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+/* ---------- LIST ---------- */
+
+.share-list {
+    margin-top: 10px;
+    width: 90%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.share-item {
+    background: #4F999E;
+    border: none;
+    width: 100%;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.share-item-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.share-item-icon {
+    width: 26px;
+    height: 26px;
+    filter: brightness(1.3);
+}
+
+/* ---------- DOTS ---------- */
+
+.share-dots {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.dot.mid {
+    opacity: 0.45;
+}
+
+/* ---------- FOLDER ---------- */
+
+.share-folder {
+    width: 50vw;
+    position: absolute;
+    bottom: 140px;
+    right: 0px;
+    z-index: 0;
+}
